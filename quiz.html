@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Labrada:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="quiz.css">
+</head>
+<body>
+    <div id="container" class="container">
+        <div id="title" class="title">General Knowledge Questions</div>
+        <div id="question" class="question"></div>
+        <label class="option" >
+            <input type="radio" name="option" value="1"><span id="option1" ></span>
+        </label >
+         <label class="option" >
+            <input type="radio" name="option" value="2"><span id="option2" ></span>
+        </label>
+         <label class="option" >
+            <input type="radio" name="option" value="3"><span id="option3" ></span>
+        </label>
+         <label class="option" >
+            <input type="radio" name="option" value="4"><span id="option4" ></span>
+        </label>
+        <button id="nextQuestion" type="button" onclick="loadNextQuestion();" class="next-btn">Next Question</button>
+    </div>
+    <div id="result" class="container result" style="display :none;">
+        <div id="score"></div>
+        <button type="button" onclick="restartGame();">Restart</button>
+    </div>
+    
+    <script type="text/javascript" src="questions.js"></script>
+    <script type="text/javascript" src="quiz.js"></script>
+</body>
+</html>
